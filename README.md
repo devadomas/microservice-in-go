@@ -15,12 +15,13 @@ Personal project to assemble microservice boilerplate in Golang based on my beli
 - Little 3rd party dependencies
     - Standard library likely has 90% of needed features
     - Framework integration shouldn't dictate main domain of service
-- Clean code structure(Clean code, Domain Driven Design)
+- Fitting Code structure for Golang(Clean code VS Domain Driven Design)
     - Domain shouldn't be impacted by 3rd parties
     - DTOs should be property whitelisted and used in it's only scope
 
 # Sources
-TBD
+- Layout inspired by [go-lang-starndarts](https://github.com/golang-standards/project-layout) community
+- ADR inspired by [Joel Parker Henderson](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main)
 
 # History
 
