@@ -1,26 +1,49 @@
 # Microservice in Golang
 
-Personal project to assemble microservice boilerplate in Golang based on my beliefs in code structure, architectural patterns, features that microservice should have, etc.
+## What is this?
+
+A personal educational (sorta) project dedicated to expressing my beliefs on building production-worthy microservices in Golang.
+
+This repository could be a place to lean about patterns, as a boilerplate for microservice development, or neither.
+My goal of this project is to share my thoughts and opinions about Golang and it's ecosystem. 
+
+Every problem, every developer, every team, every company ... have different ideas on how certain things should be done.
+It doesn't mean it fits you. It's not the only way to implement things. And certainly it's not the only way I would code.
 
 ## Objectives
-- [ ] Set the desired code structure
-- [ ] Define logging
-- [ ] Define monitoring (HTTP stats, APM)
-- [ ] Define testing approach
+
+These are some of my opinions, on what should the microservice have. 
+I will try to share my toughs on every objective in separate files located in **/somefolder**.
+Order is not necessary important here
+
+- [ ] Code structure/ideology
+- [ ] Methodology behind response, resource structures
+- [ ] Config container
+- [ ] Versioning
+
+- [ ] Message brokers
+    - [ ] AWS SQS/SNS
+    - [ ] Kafka
+    - [ ] RabbitMQ
+
+- [ ] Tracing and Telemetry(Observability)
+- [ ] Logging
+- [ ] Storage/Database layer
+    - [ ] Migrations container
+    - [ ] Migrations strategy
+    - [ ] ORM vs no-ORM
+- [ ] Cache-ing
+- [ ] Docs/Swagger
+- [ ] Testing
+- [ ] Containerization / Local isolated development environment
+
+- [ ] Tooling
 
 ### Note
 > Everything is based on my beliefs and should be taken with good grain of salt. Every individual or team has their own "perfect" recipe of what works, and what doesn't. Project is dedicated to learn and share knowledge.
 
-# Beliefs
-- Little 3rd party dependencies
-    - Standard library likely has 90% of needed features
-    - Framework integration shouldn't dictate main domain of service
-- Fitting Code structure for Golang(Clean code VS Domain Driven Design)
-    - Domain shouldn't be impacted by 3rd parties
-    - DTOs should be property whitelisted and used in it's only scope
-
 # Sources
-- Layout inspired by [go-lang-starndarts](https://github.com/golang-standards/project-layout) community
+- Layout inspired by [go-lang-standards](https://github.com/golang-standards/project-layout) community
 - ADR inspired by [Joel Parker Henderson](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main)
 
 # History
